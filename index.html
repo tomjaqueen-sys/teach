@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GradeSnap AI - Rough Sheet to Digital Gradebook</title>
+    <meta name="description" content="Instantly convert rough grading sheets, handwritten test scores, and mark sheets into structured digital gradebooks using your camera or image upload, with direct CSV and Excel export." />
+    <meta property="og:title" content="GradeSnap AI - Rough Sheet to Digital Gradebook" />
+    <meta property="og:description" content="Instantly convert rough grading sheets, handwritten test scores, and mark sheets into structured digital gradebooks using your camera or image upload, with direct CSV and Excel export." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Runtime constraint: HMR is disabled, ignore benign WebSocket connection errors
+      window.addEventListener('error', function (e) {
+        if (
+          e.message &&
+          (e.message.includes('WebSocket') ||
+           e.message.includes('createWebSocketModuleRunnerTransport') ||
+           e.message.includes('@vite/client'))
+        ) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function (e) {
+        var msg = String((e && (e.reason && (e.reason.message || e.reason))) || '');
+        if (msg.includes('WebSocket') || msg.includes('createWebSocketModuleRunnerTransport') || msg.includes('@vite/client')) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      }, true);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

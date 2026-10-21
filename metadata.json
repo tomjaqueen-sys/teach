@@ -1,0 +1,6 @@
+{
+  "name": "GradeSnap AI - Rough Sheet to Digital Gradebook",
+  "description": "Instantly convert rough grading sheets, handwritten test scores, and mark sheets into structured digital gradebooks using your camera or image upload, with direct CSV and Excel export.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
